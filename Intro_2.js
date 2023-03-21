@@ -43,5 +43,4 @@ console.log(paperoga);  // anche se ad essa non è stato assegnato un valore
 let amelia = 12;
 console.log(amelia);
 amelia = 40;
-console.log(amelia);
-                       
+console.log(amelia);                       
