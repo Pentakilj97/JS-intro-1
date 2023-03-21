@@ -167,7 +167,7 @@ while (true) {
 
 alert('Numero indovinato!');*/
 
-let numeroSegreto = 40;
+/*let numeroSegreto = 40;
 let numeroDigitato = Number(prompt('Indovina il numero'));
 
 
@@ -178,4 +178,4 @@ while (true) {
 
 
     }
-}
+}*/
