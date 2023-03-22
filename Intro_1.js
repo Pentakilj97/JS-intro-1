@@ -2,9 +2,9 @@
 
 // Javascript gestisce sostanzialmente 3 cose:
 
-console.log('This is a string:', 'Hello World!');
-console.log('This is a number:', 44);
-console.log('This is a boolean:', false);
+console.log('This is a string:', 'Hello World!');  // Stringhe
+console.log('This is a number:', 44);  // Numeri
+console.log('This is a boolean:', false);  // Boolean
 
 // Operazioni matematiche di base:
 

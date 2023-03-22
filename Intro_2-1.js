@@ -25,20 +25,20 @@ console.log(gambaDiLegno); // In console esce 56
 const macchiaNera = gambaDiLegno + basettoni;
 console.log(macchiaNera); // In console esce 112 (56 + 56)
 
-let qui, quo, qua = 12;
+let qui, quo, qua = 12;  // Modo SBAGLIATO
 console.log(qui, quo, qua); // Il valore viene assegnato all'ultimo
 
-let Qui = 12, Quo = 12, Qua =12;
+let Qui = 12, Quo = 12, Qua =12; // Modo GIUSTO
 console.log(Qui, Quo, Qua); // Questo è il modo corretto
 
 let paperoga;           // La variabile let può essere mandata in console
 console.log(paperoga);  // anche se ad essa non è stato assegnato un valore
 
-//cont zioPaperone; // Non assegnare un valore ad un costante, a differenza di let,
+//const zioPaperone; // Non assegnare un valore ad un costante, a differenza di let,
                   // non può essere fatto
 
-//let 44dave; // Le variabili non possono iniziare con un numero
-//let dave-89; // Le variabili non possono contenere il trattino
+//let 44dave; // Le variabili NON possono iniziare con un numero
+//let dave-89; // Le variabili NON possono contenere il trattino
 
 let amelia = 12;
 console.log(amelia);

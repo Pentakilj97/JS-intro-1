@@ -87,8 +87,8 @@ for (let ftchh = 0; ftchh < 10; ftchh++) {  // Col ciclo FOR si mette al suo int
     console.log('...tua moglie!');  // la variabile, seguita dalla condizionale
 };                                  // e infine dall'incremento.
 
-for (let elisBubu = 5; elisBubu < 100; elisBubu += 5) {  // Questo programma stamperà
-    console.log(elisBubu);                               // tutti i multipli di 5
+for (let eliBubu = 5; eliBubu < 100; eliBubu += 5) {  // Questo programma stamperà
+    console.log(eliBubu);                               // tutti i multipli di 5
 };                                                       // da 5 a 100.
 
 // ESERCIZI:
