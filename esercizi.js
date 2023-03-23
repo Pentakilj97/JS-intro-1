@@ -123,66 +123,79 @@ while (string.length < 7) {
 
 // };
 
-let canc = "#";
-let box = "_";
-let k = 2;
+
+let box = "";
+let k = 3;
 
 
-// for (let i = 0; i < k; i ++) {
+for (let y = 0; y < k; y ++) {
 
-//     for (let j = 0; j < i; j ++) {
+    for (let x = 0; x < k; x++) {
+        
+        if (y % 2 === 0) {
+        
+            if (x % 2 === 0) {
+                box += "#";
+            } else {
+                box += " ";
+            };
 
-//         if (j % 2 !== 0) {
-//             box = "_";
-//         } else {
-//             canc = "#";
-//         };
+        } else {
 
-//         console.log(box + canc)
+            if (x % 2 === 0) {
+                box += " ";
+            }else {
+                box += "#";
+            };
 
-//     };
+        };
+        
+    };
 
+    box += '\n';
+
+};
+
+console.log(box);
+
+
+
+// ESEMPI IN CLASSE:
+
+
+// for (let i = 20; i >= 0; i-=2) {
+//     console.log(i);
 // };
 
-// for (let i = 1; i <= k; i++) {
-
-//     if (k === 1) {
-//         console.log(box);
-//     } else if (k === 2) {
-//         console.log(canc + box);
-//     } else if (i % 2 !== 0) {
-//         console.log(box + canc)
-//     }
-
-// };
-    
 
 
+// for (let i = 0; i < 20; i++) {
 
-// for (let i = 0; i < j; i ++) {
-
-//     for (let k = 0; k < j; k ++) {
-
-//         if (k % 2 !== 0) {
-//             box = "_";
-//             somma = box + canc;
-//         } else {
-//             canc = "#"
-//             somma = box + canc;
-//         }
-
-//         console.log(somma);
-
-//     };
-
-//     if (i % 2 !== 0) {
-//         box = "_";
-//         somma = box + canc;
+//     if (i % 2 === 0) {
+//         console.log(i/2);
+//     } else if (i % 3 === 0) {
+//         console.log(i**3);
 //     } else {
-//         canc = "#"
-//         somma = box + canc;
-//     }
+//         console.log(i);
+//     };
 
-//     console.log(somma);
+// };
+
+
+
+// let misteryNumber = 1;
+// let notFound = true;
+
+// while (notFound) {
+//     const multipleof2 = misteryNumber % 2 === 0;
+//     const multipleof3 = misteryNumber % 3 === 0;
+//     const multipleof5 = misteryNumber % 5 === 0;
+
+//     if (multipleof2 && multipleof3 && multipleof5 ) {
+//         console.log(misteryNumber);
+//         notFound = false;
+//     } else {
+//         misteryNumber++;
+//     };
 
 // };
