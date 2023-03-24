@@ -173,16 +173,16 @@ function sommaUno (numb) {
 
 // ESEMPIO:
 
-function log(messaggio) {
-    console.log(messaggio);
-};
+// function log(messaggio) {
+//     console.log(messaggio);
+// };
 
-function sommaDue(numb) {
-    return numb + 2;
-};
+// function sommaDue(numb) {
+//     return numb + 2;
+// };
 
-log(sommaDue(5));  // Si fa così! Si separano le funzioni pure da quelle impure
-                   // e successivamente si richiamano insieme.
+// log(sommaDue(5));  // Si fa così! Si separano le funzioni pure da quelle impure
+//                    // e successivamente si richiamano insieme.
 
 
 // ESERCIZI:
@@ -192,16 +192,98 @@ log(sommaDue(5));  // Si fa così! Si separano le funzioni pure da quelle impure
 // 1) Scrivere una funzione che dato un numero se è positivo
 //    lo moltiplica per due, altrimenti return number:
 
+
+// function moltiplicaPer2(number){
+//     if(number >=0){
+//         let result=number*2;
+//         return result;
+//     }else {
+//         return number;
+//     }
+// }
+
+// console.log(moltiplicaPer2(2));
+
+
+
+
 // 2) Scrivere una funzione che data una stringa restituisca la sua
 //    version maiuscola:
+
+function Maiuscola(stringa){  
+
+    if (typeof stringa === 'string') {
+
+        let maiuscolo = stringa.toUpperCase();
+        return maiuscolo;
+
+    }  else {
+
+        console.log('Non hai inserito una stringa');
+
+    }  
+
+};
+
+console.log(Maiuscola(10));
 
 // 3) Scrivere una funzione che data una stringa mi restituisca
 //    vero se è più lunga di 10 caratteri, altrimenti falso:
 
+function Vero(veroFalso){
+    if (veroFalso.length>10) {
+
+        let Vero = true;
+        return Vero;
+        
+    } else {
+
+        let falso = false;
+        return falso;
+        
+    }
+}; console.log(Vero('qwertyuio'))
+
+
 // 4) Scrivere una funzione pura che restituisca la scacchiera:
+
+
+
+
 
 // 5) Scrivere una funzione che dato un numero restituisca una
 //    stringa con la logica FizzBuzz:
 
+function fizz(numero){
+    if (numero % 3 === 0) {
+        let divisibilePerTre= 'Fizz';
+        return divisibilePerTre;
+        
+    } else if (numero % 5===0){
+        let divisibilePerCinque='Buzz';
+        return divisibilePerCinque;
+        
+    }else if(numero %3===0 && numero %5===0){
+        let divisibilePerEntrambi='FizzBuzz';
+        return divisibilePerEntrambi;
+    }else {
+        return numero;
+    }
+
+}; console.log(fizz(31));
+
+
 // 6) Scrivere una funzione che data una stringa restituisca una stringa
 //    composta solo dai caratteri dispari dell'originale:
+
+
+function composta(stringa){
+    
+    for (let i = 0; i < stringa.length; i++) {
+        ciao=stringa.charAt(i);
+        for
+
+        
+    }
+
+}
