@@ -210,39 +210,41 @@ function sommaUno (numb) {
 // 2) Scrivere una funzione che data una stringa restituisca la sua
 //    version maiuscola:
 
-function Maiuscola(stringa){  
+// function Maiuscola(stringa){  
 
-    if (typeof stringa === 'string') {
+//     if (typeof stringa === 'string') {
 
-        let maiuscolo = stringa.toUpperCase();
-        return maiuscolo;
+//         let maiuscolo = stringa.toUpperCase();
+//         return maiuscolo;
 
-    }  else {
+//     }  else {
 
-        console.log('Non hai inserito una stringa');
+//         return '';
 
-    }  
+//     }  
 
-};
+// };
 
-console.log(Maiuscola(10));
+// console.log(Maiuscola('poppp'));
+
 
 // 3) Scrivere una funzione che data una stringa mi restituisca
 //    vero se è più lunga di 10 caratteri, altrimenti falso:
 
-function Vero(veroFalso){
-    if (veroFalso.length>10) {
+// function Vero(veroFalso){
+//     if (veroFalso.length>10) {
 
-        let Vero = true;
-        return Vero;
+//         let Vero = true;
+//         return Vero;
         
-    } else {
+//     } else {
 
-        let falso = false;
-        return falso;
+//         let falso = false;
+//         return falso;
         
-    }
-}; console.log(Vero('qwertyuio'))
+//     }
+// }; console.log(Vero('qwertyuio'))
+
 
 
 // 4) Scrivere una funzione pura che restituisca la scacchiera:
@@ -251,39 +253,125 @@ function Vero(veroFalso){
 
 
 
+
+
+
+
 // 5) Scrivere una funzione che dato un numero restituisca una
 //    stringa con la logica FizzBuzz:
 
-function fizz(numero){
-    if (numero % 3 === 0) {
-        let divisibilePerTre= 'Fizz';
-        return divisibilePerTre;
+// function fizz(numero){
+//     if (numero % 3 === 0) {
+//         let divisibilePerTre= 'Fizz';
+//         return divisibilePerTre;
         
-    } else if (numero % 5===0){
-        let divisibilePerCinque='Buzz';
-        return divisibilePerCinque;
+//     } else if (numero % 5===0){
+//         let divisibilePerCinque='Buzz';
+//         return divisibilePerCinque;
         
-    }else if(numero %3===0 && numero %5===0){
-        let divisibilePerEntrambi='FizzBuzz';
-        return divisibilePerEntrambi;
-    }else {
-        return numero;
-    }
+//     }else if(numero %3===0 && numero %5===0){
+//         let divisibilePerEntrambi='FizzBuzz';
+//         return divisibilePerEntrambi;
+//     }else {
+//         return numero;
+//     }
 
-}; console.log(fizz(31));
+// }; console.log(fizz(31));
 
 
 // 6) Scrivere una funzione che data una stringa restituisca una stringa
 //    composta solo dai caratteri dispari dell'originale:
 
-
-function composta(stringa){
-    
-    for (let i = 0; i < stringa.length; i++) {
-        ciao=stringa.charAt(i);
-        for
-
+// function selectOddCharsFrontText(text){
+//     let result= '';
+//     for (let i = 1; i < text.length; i+=2) {
+//         result+= text[i];
         
+//     }
+//     return result;
+// }
+
+// console.log(selectOddCharsFrontText('ciao'));
+// console.log(selectOddCharsFrontText('andrea'));
+// console.log(selectOddCharsFrontText('andrea il malvagio'));
+
+
+//7)esercizio libro
+
+// function findMinNumber(number1, number2){
+//     if(number1>number2){
+//         return number2;
+//     } else {
+//         return number1;
+//     }
+// }
+
+// console.log(findMinNumber(10, 5))
+// console.log(findMinNumber(-10, 0))
+
+// const findMinNumber=(number1,number2)=>number1>number2 ? number2 : number1;
+
+
+//8) scrivere una funzione che sommi tutti i numeri in un range prestabilito
+
+function sumRange(startNumber, endNumber){
+    let sum=0;
+    for (let i = startNumber; i <=endNumber; i++) {
+        sum = sum+i;
     }
+    return sum;
 
 }
+
+console.log(sumRange (0,3))//6
+console.log(sumRange(1,3))//6
+console.log(sumRange(1,5))//15
+console.log(sumRange(2,6))//20
+console.log(sumRange(6,6))//6
+console.log(sumRange(-2,2))//7
+
+
+// 0+1+2+3
+// 1+2+3
+// 1+2+3+4+5
+
+//----------------------------------------
+//LE FUNZIONI POSSONO USARE ALTRE FUNZIONI
+
+// function doubleAndPow3(selectedNumber){
+    // const double= selectedNumber *2;
+    // const pow3= double **3;
+    // return pow3;
+    // // //----------------------------------------
+    // const double=double(selectedNumber);
+    // const pow3 = makePow3(double);
+    // return pow3;
+  
+//     // return makePow3(makeDouble(selectedNumber));
+//  }
+// function makedouble(selectedNumber){
+//     return selectedNumber*2;
+// }
+
+// function makePow3(selectedNumber){
+//     return selectedNumber **3;
+// }
+
+// console.log(doubleAndPow3(2));//64
+// console.log(doubleAndPow3(3));//216
+
+
+// function ifMoreThan10CharUpperCase(text){
+//     function isMoreThan10CharInside(TextToCheck){
+//         return TextToCheck.length>10;
+//     }
+//     if (isMoreThan10CharInside(text)){
+//         return text.toUpperCase();
+//     } else{
+//         return text;
+//     }
+// }
+
+// console.log(ifMoreThan10CharUpperCase('il cane rosa è rosa'))
+
+//---------------------------------------------

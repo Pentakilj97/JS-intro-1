@@ -124,39 +124,39 @@ while (string.length < 7) {
 // };
 
 
-let box = "";
-let k = 3;
+// let box = "";
+// let k = 3;
 
 
-for (let y = 0; y < k; y ++) {
+// for (let y = 0; y < k; y ++) {
 
-    for (let x = 0; x < k; x++) {
+//     for (let x = 0; x < k; x++) {
         
-        if (y % 2 === 0) {
+//         if (y % 2 === 0) {
         
-            if (x % 2 === 0) {
-                box += "#";
-            } else {
-                box += " ";
-            };
+//             if (x % 2 === 0) {
+//                 box += "#";
+//             } else {
+//                 box += " ";
+//             };
 
-        } else {
+//         } else {
 
-            if (x % 2 === 0) {
-                box += " ";
-            }else {
-                box += "#";
-            };
+//             if (x % 2 === 0) {
+//                 box += " ";
+//             }else {
+//                 box += "#";
+//             };
 
-        };
+//         };
         
-    };
+//     };
 
-    box += '\n';
+//     box += '\n';
 
-};
+// };
 
-console.log(box);
+// console.log(box);
 
 
 
@@ -199,3 +199,15 @@ console.log(box);
 //     };
 
 // };
+
+//--------------
+//FUNZIONI
+
+function doubleNumberIfPositive(selectedNumber){
+    if (selectedNumber>=0) {
+        return selectedNumber*2;
+    } 
+    return selectedNumber;
+}
+console.log(doubleNumberIfPositive(20))
+console.log(doubleNumberIfPositive(-10))
